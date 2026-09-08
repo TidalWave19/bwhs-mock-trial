@@ -1,0 +1,2 @@
+document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));btn.classList.add('active');}));
+const q=document.querySelector('#rosterSearch'); if(q){q.addEventListener('input',()=>{const v=q.value.toLowerCase();document.querySelectorAll('.person').forEach(x=>x.style.display=x.innerText.toLowerCase().includes(v)?'block':'none')})}
